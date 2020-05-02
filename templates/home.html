@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div class="jumbotron bg-light text-center">
+        <h1>Welcome to <b>Articlemate</b></h1>
+        <p class="lead">Check About section for more details...</p>
+        {% if session.logged_in == NULL %}
+        <a href="/register" class="btn btn-primary btn-lg">Register</a>
+        <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+    </div>
+    <div class="jumbotron bg-light text-center">
+        <p class="lead"><a href="" class="a">To view the sourcecode</a></p>
+        <i class="fa fa-github" style="font-size:48px"></i>
+    </div>
+{% endblock %}
